@@ -1,8 +1,3 @@
-[![Build Status](https://travis-ci.org/tflearn/tflearn.svg?branch=master)](https://travis-ci.org/tflearn/tflearn)
-[![PyPI version](https://badge.fury.io/py/tflearn.svg)](https://badge.fury.io/py/tflearn)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Join the chat at https://gitter.im/einsteinsci/betterbeginnings](https://badges.gitter.im/tflearn/tflearn.svg)](https://gitter.im/tflearn/tflearn?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 # TFLearn: Deep learning library featuring a higher-level API for TensorFlow.
 
 TFlearn is a modular and transparent deep learning library built on top of Tensorflow.  It was designed to provide a higher-level API to TensorFlow in order to facilitate and speed-up experimentations, while remaining fully transparent and compatible with it.
@@ -20,7 +15,9 @@ The high-level API currently supports most of recent deep learning models, such 
 
 Note: Latest TFLearn (v0.3) is only compatible with TensorFlow v1.0 and over.
 
-## Overview
+# Quick overview
+
+**Code Example**
 ```python
 # Classification
 tflearn.init_graph(num_cores=8, gpu_memory_fraction=0.5)
@@ -48,78 +45,47 @@ model.fit(X, Y)
 model.generate(50, temperature=1.0)
 ```
 
-There are many more examples available *[here](http://tflearn.org/examples)*.
+There are many more examples available [here](examples).
 
-## Installation
+# Where to Start?
 
-**TensorFlow Installation**
+To install TFLearn, see: [Installation Guide](installation).
 
-TFLearn requires Tensorflow (version 1.0+) to be installed.
+If your version of Tensorflow is under 1.0: [Upgrade Tensorflow](installation/#upgrade-tensorflow).
 
-To install TensorFlow, simply run:
-```
-pip install tensorflow
-```
-or, with GPU-support:
-```
-pip install tensorflow-gpu
-```
+To get started: [Getting Started with TFLearn](getting_started) and [TFLearn Tutorials](tutorials).
 
-For more details see *[TensorFlow installation instructions](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md)*
+For more examples: [Examples List](examples).
 
-**TFLearn Installation**
+To browse the API, check the [API Documentation](doc_index#API).
 
-To install TFLearn, the easiest way is to run
 
-For the bleeding edge version (recommended):
-```python
-pip install git+https://github.com/tflearn/tflearn.git
-```
-For the latest stable version:
-```python
-pip install tflearn
-```
-Otherwise, you can also install from source by running (from source folder):
-```python
-python setup.py install
-```
-
-- For more details, please see the *[Installation Guide](http://tflearn.org/installation)*.
-
-## Getting Started
-
-See *[Getting Started with TFLearn](http://tflearn.org/getting_started)* to learn about TFLearn basic functionalities or start browsing *[TFLearn Tutorials](http://tflearn.org/tutorials)*.
-
-## Examples
-
-There are many neural network implementation available, see *[Examples](http://tflearn.org/examples)*.
-
-## Documentation
-
-[http://tflearn.org/doc_index](http://tflearn.org/doc_index)
-
-## Model Visualization
+# Model Visualization
 
 **Graph**
 
-![Graph Visualization](docs/templates/img/graph.png)
+![Graph Visualization](./img/graph.png)
 
 **Loss & Accuracy (multiple runs)**
 
-![Loss Visualization](docs/templates/img/loss_acc.png)
+![Loss Visualization](./img/loss_acc.png)
 
 **Layers**
 
-![Layers Visualization](docs/templates/img/layer_visualization.png)
+![Layers Visualization](./img/layer_visualization.png)
 
-## Contributions
+# Sources
+
+GitHub: [https://github.com/tflearn/tflearn](https://github.com/tflearn/tflearn).
+
+# Contributions
 
 This is the first release of TFLearn, if you find any bug, please report it in the GitHub issues section.
 
-Improvements and requests for new features are more than welcome! Do not hesitate to twist and tweak TFLearn, and send pull-requests.
+Improvements and requests for new features are more than welcome! Do not hesitate to twist and tweak TF Learn, and send pull-requests.
 
-For more info: *[Contribute to TFLearn](http://tflearn.org/contributions)*.
+For more info: *[Contribute to TFLearn](contributions)*.
 
-## License
+# License
 
 MIT License
